@@ -25,6 +25,8 @@ It is assumed that the latest version of Go is already installed on your system 
 ### Build the Client-Side Go App
 `cd $ISOGO_APP_ROOT/client`
 
+`go get ./...`
+
 `gopherjs build`
 
 ### Run the Web Server Instance
@@ -45,7 +47,7 @@ If all goes well, you should see the Isomorphic Go logo, along with a message re
 
 Once you've installed, and confirmed, that the basic Isomorphic Go application is working, the next logical step is to install [Kick](https://github.com/isomorphicgo/kick).
 
-Kick automatically recompiles Go code, and it can take both the `go` and `gopherjs` commands into consideration. 
+Kick automatically recompiles Go code, and it has the ability to take both the `go` and `gopherjs` commands into consideration. 
 
 Kick performs an *instant kickstart* of the web server instance, upon the modification of a Go source file. [Check out Kick](https://github.com/isomorphicgo/kick)
 
