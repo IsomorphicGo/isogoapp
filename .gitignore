@@ -1,0 +1,8 @@
+*~
+*.swp
+*.swo
+*.tmp
+*.out
+.DS_Store
+*.js
+*.js.map
