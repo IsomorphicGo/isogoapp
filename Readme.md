@@ -47,11 +47,11 @@ It is assumed that the latest version of Go is already installed on your system 
 
 Open the envrionment variables window and,
 
-1. Find a variable called 'Path' under User Variables section. Focus on it and click 'Edit'. A new pop-up would open and there you would find a button called New in the top-right corner. Click on it, and it will bring blinking cursor in the focus. The cursor will be placed at the end of the list of paths. So if your Go workplace is C:\GoWorkspace, then you would type 'C:\GoWorkspace\bin' there.
+1. Find a variable called 'Path' under User Variables section. Focus on it and click 'Edit'. A new pop-up would open and there you would find a button called New in the top-right corner. Click on it, and it will bring blinking cursor in the focus. The cursor will be placed at the end of the list of paths. So if your Go workplace is C:\GoWorkspace, then you would type `C:\GoWorkspace\bin` there.
 
-2. In the 'System Variables' section, click on New. Enter 'GOBIN' in the Variable Name field and, 'C:\GoWorkspace\bin\' in the Variable value field.
+2. In the 'System Variables' section, click on New. Enter 'GOBIN' in the Variable Name field and, `C:\GoWorkspace\bin\` in the Variable value field.
 
-We have assumed that your go workspace is called GoWorkspace and is located at C:\GoWorkspace. It is highly possible that your go workspace's name is not same as the example taken here, please modify the name of your go workspace according to your configuration.
+We have assumed that your go workspace is called GoWorkspace and is located at `C:\GoWorkspace`. It is highly possible that your go workspace's name is not same as the example taken here, please modify the name of your go workspace according to your configuration.
 
 Save the changes made and run 'go env' from cmd. You should now see GOBIN to be pointing to bin directory inside your Go workspace folder.
 
@@ -60,12 +60,12 @@ Enter the command `go get -u github.com/isomorphicgo/isogoapp` in cmd.
 
 If Go is properly configured in your system and command is successfully executed, then you will see the following directory structure in src folder of your Go workspace.
 
-C:\Workspace\src\github.com\isomorphicgo\isogoapp
+C:\GoWorkspace\src\github.com\isomorphicgo\isogoapp
 
 ### Define the `ISOGO_APP_ROOT` environment variable.
 Now, we again need to set up an environment variable. Open the environment variable screen and under System Variables section, create a New variable. On Windows 10, this is done by clicking on New.
 
-In the Variable name field, enter 'ISOGO_APP_ROOT'.
+In the Variable name field, enter `ISOGO_APP_ROOT`.
 
 And, in the Variable value field, enter `%GOPATH%src\github.com\isomorphicgo\isogoapp`
 
