@@ -49,9 +49,9 @@ Open the envrionment variables window and,
 
 1. Find a variable called 'Path' under User Variables section. Focus on it and click 'Edit'. A new pop-up would open and there you would find a button called New in the top-right corner. Click on it, and it will bring blinking cursor in the focus. The cursor will be placed at the end of the list of paths. So if your Go workplace is C:\GoWorkspace, then you would type `C:\GoWorkspace\bin` there.
 
-2. In the 'System Variables' section, click on New. Enter 'GOBIN' in the Variable Name field and, `C:\GoWorkspace\bin\` in the Variable value field.
+2. In the 'System Variables' section, click on New. Enter `GOBIN` in the Variable Name field and, `C:\GoWorkspace\bin\` in the Variable value field.
 
-We have assumed that your go workspace is called GoWorkspace and is located at `C:\GoWorkspace`. It is highly possible that your go workspace's name is not same as the example taken here, please modify the name of your go workspace according to your configuration.
+We have assumed that your go workspace is called GoWorkspace and is located at 'C:\GoWorkspace'. It is highly possible that your go workspace's name is not same as the example taken here, please modify the name of your go workspace according to your configuration.
 
 Save the changes made and run 'go env' from cmd. You should now see GOBIN to be pointing to bin directory inside your Go workspace folder.
 
