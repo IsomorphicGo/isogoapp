@@ -104,6 +104,8 @@ Kick automatically recompiles Go code, and it has the ability to take both the `
 
 Kick performs an *instant kickstart* of the web server instance, upon the modification of a Go source file. [Check out Kick](https://github.com/isomorphicgo/kick)
 
+Please note, that Kick will only work on Unix-like operating systems (e.g., BSD, Linux, Mac OS).
+
 ### The Isomorphic Go Project
 More information on the benefits of Isomorphic Go applications can be found at the [Isomorphic Go Website](http://isomorphicgo.org).
 
