@@ -9,33 +9,7 @@ import (
 	"github.com/isomorphicgo/isogoapp/handlers"
 )
 
-<<<<<<< HEAD
-var webappRoot string = os.Getenv("ISOGO_APP_ROOT")
-
-func indexHandler(w http.ResponseWriter, r *http.Request) {
-	renderTemplate(w, webappRoot+"/templates/index.tmpl", nil)
-}
-
-// Template rendering function
-func renderTemplate(w http.ResponseWriter, templateFile string, templateData interface{}) {
-
-	t, err := template.ParseFiles(templateFile)
-	if err != nil {
-		log.Fatal("Error encountered while parsing the template: ", err)
-	}
-	t.Execute(w, templateData)
-}
-
-func gopherjsScriptHandler(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, webappRoot+"/client/client.js")
-}
-
-func gopherjsScriptMapHandler(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, webappRoot+"/client/client.js.map")
-}
-=======
 var WebAppRoot string = os.Getenv("ISOGO_APP_ROOT")
->>>>>>> 1f58dae263ab74226133033f55a2a449b05b4683
 
 func main() {
 
