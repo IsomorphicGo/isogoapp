@@ -8,5 +8,5 @@ import (
 )
 
 func IndexHandler(w http.ResponseWriter, r *http.Request) {
-	view.RenderTemplate(w, os.Getenv("ISOGO_APP_ROOT")+"/templates/index.html", nil)
+	view.RenderTemplate(w, os.Getenv("ISOGO_APP_ROOT")+"/templates/index.tmpl", nil)
 }
