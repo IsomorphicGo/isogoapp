@@ -13,7 +13,7 @@ import (
 var webappRoot string = os.Getenv("ISOGO_APP_ROOT")
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
-	renderTemplate(w, webappRoot+"/templates/index.html", nil)
+	renderTemplate(w, webappRoot+"/templates/index.tmpl", nil)
 }
 
 // Template rendering function
