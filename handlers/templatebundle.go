@@ -3,9 +3,10 @@ package handlers
 import (
 	"bytes"
 	"encoding/gob"
-	"isogoblog/common"
 	"log"
 	"net/http"
+
+	"github.com/isomorphicgo/isogoapp/common"
 )
 
 func TemplateBundleHandler(env *common.Env) http.Handler {

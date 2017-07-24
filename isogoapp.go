@@ -2,13 +2,13 @@ package main
 
 import (
 	"fmt"
-	"isogoblog/common"
-	"isomorphicgo/isokit"
 	"net/http"
 	"os"
 
 	"github.com/gorilla/mux"
+	"github.com/isomorphicgo/isogoapp/common"
 	"github.com/isomorphicgo/isogoapp/handlers"
+	"github.com/isomorphicgo/isokit"
 )
 
 var WebAppRoot string = os.Getenv("ISOGO_APP_ROOT")
