@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"isogoblog/common"
+	"isomorphicgo/isokit"
 	"net/http"
 	"os"
 
@@ -18,11 +20,17 @@ func main() {
 		os.Exit(1)
 	}
 
-	fs := http.FileServer(http.Dir(WebAppRoot + "/static"))
+	env := common.Env{}
+	ts := isokit.NewTemplateSet()
+	ts.GatherTemplates()
+	env.TemplateSet = ts
 	r := mux.NewRouter()
 	r.HandleFunc("/", handlers.IndexHandler)
-	r.HandleFunc("/js/client.js", handlers.GopherjsScriptHandler)
-	r.HandleFunc("/js/client.js.map", handlers.GopherjsScriptMapHandler)
+	r.HandleFunc("/js/client.js", isokit.GopherjsScriptHandler)
+	r.HandleFunc("/js/client.js.map", isokit.GopherjsScriptMapHandler)
+	r.Handle("/template-bundle", handlers.TemplateBundleHandler(&env))
+
+	fs := http.FileServer(http.Dir(WebAppRoot + "/static"))
 	http.Handle("/", r)
 	http.Handle("/static/", http.StripPrefix("/static", fs))
 	http.ListenAndServe(":8080", nil)
