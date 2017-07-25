@@ -1,6 +1,6 @@
 package common
 
-import "isomorphicgo/isokit"
+import "github.com/isomorphicgo/isokit"
 
 type Env struct {
 	TemplateSet *isokit.TemplateSet
