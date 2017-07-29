@@ -26,8 +26,8 @@ func main() {
 	env.TemplateSet = ts
 	r := mux.NewRouter()
 	r.HandleFunc("/", handlers.IndexHandler)
-	r.HandleFunc("/js/client.js", isokit.GopherjsScriptHandler)
-	r.HandleFunc("/js/client.js.map", isokit.GopherjsScriptMapHandler)
+	r.Handle("/js/client.js", isokit.GopherjsScriptHandler(WebAppRoot))
+	r.Handle("/js/client.js.map", isokit.GopherjsScriptMapHandler(WebAppRoot))
 	r.Handle("/template-bundle", handlers.TemplateBundleHandler(&env))
 
 	fs := http.FileServer(http.Dir(WebAppRoot + "/static"))
