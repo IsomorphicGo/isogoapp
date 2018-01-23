@@ -1,10 +1,19 @@
 <p align="center"><a href="http://isomorphicgo.org" target="_blank"><img src="https://github.com/isomorphicgo/isogoapp/blob/master/static/images/isomorphic_go_logo.png"></a></p>
 
+
 # Isomorphic Go App (isogoapp)
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/isomorphicgo/isogoapp)](https://goreportcard.com/report/github.com/isomorphicgo/isogoapp)
 
 A basic, barebones web app, intented to be used as a starting point for developing an [Isomorphic Go](http://isomorphicgo.org) application.
+
+
+## Live Demo
+Please note, that the isogoapp is rather simple and does not demonstrate all the features of Isomorphic Go.
+
+For a more comprehensive demonstration, please visit the live demo of IGWEB, an Isomorphic Go web application demo available at [http://igweb.kamesh.com](http://igweb.kamesh.com)
+
+The source code for the live demo is available here: [https://github.com/EngineerKamesh/igb](https://github.com/EngineerKamesh/igb)
 
 ## Installation on Unix-like OS
 
